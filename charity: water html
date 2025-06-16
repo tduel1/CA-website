@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Charity: Water Banner Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-image: url('https://cdn2.dropmarkusercontent.com/52043/b11d5ce6fcb6a9a9e2e92fbed5a1bde777c00ddc3601ea26e848e34f48472aa7/preview/Madagascar_2019_CG-4322.jpg?Expires=1750035583&Signature=Vb~KNVS2Exgb7F8a2EoCb1K7uaFogMbMfwuUfzwmv-JX7-vMys57wEhygE2DRKWh1ngjR~uRGMOSw5WAlaMharHUf2-tmN6cD-fhwHX0~A1xsc89N2ELzZsZS6i9rwAOsTSpfwI9TPfQpS4NNxCogvL~ur22GNmQ4UPUKU~MkJ68FbafmHSo4AQyix-M4LKxszhpBk2SkYVU15wkr3wUXBBSAwO0ofD2DquwAjJyXaNU9udbg-lGF8HONyD7KdMVCsfXVfaOqL3i1d1W4qyPaS-QYkyeVKwumubhpPOp7~L~c0X6anRGOp9j6bfpndrcYTu21~rcbGmScZ6iYbFSWw__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      font-family: 'Avenir', Arial, sans-serif;
+    }
+    header {
+      background-color: transparent;
+      padding: 12px 10px;
+      border-bottom: 1px solid transparent;
+      width: 100%;
+    }
+    .logo {
+      vertical-align: middle;
+      width: 200px;      /* Adjusts logo size for desktop */
+      max-width: 30vw;   /* Makes logo responsive */
+      height: auto;
+      margin-right: 16px;
+      display: inline-block;
+    }
+    nav {
+      width: 98%;
+      overflow: hidden;
+    }
+    .about-link {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: 400;
+      margin-left: 100px;
+      display: inline-block;
+    }
+    .donate-btn {
+      background-color: #ffc907;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 999px;
+      font-size: 1em;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      margin-top: 4px;
+      margin-right: 45px;
+      float: right;
+    }
+    section.cta {
+      width: 22%; /* Slightly bigger than 1/6 */
+      min-width: 550px;
+      max-width: 750px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      padding: 60px;
+      box-sizing: border-box;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 22px;
+      font-weight: 700;
+      color: #fff;
+      font-family: 'Times New Roman', Times, serif; /* This sets a different font for headings */
+    }
+    p {
+      font-size: 1.4em;
+      margin-bottom: 28px;
+      color: #fff;
+    }
+    a.cta-button {
+      display: inline-block;
+      background-color: #77a8bb;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 22px;
+      font-size: 1.4em;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    a.cta-button:hover {
+      background-color: #5e8fa3;
+    }
+    /* Responsive for mobile devices */
+    @media (max-width: 600px) {
+      section.cta {
+        width: 90%;
+        min-width: unset;
+        max-width: unset;
+        left: 5%;
+        padding: 14px;
+      }
+      h1 {
+        font-size: 1.4em;
+      }
+      .banner-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+      .about-link, .donate-btn {
+        text-align: center;
+        float: none;
+        display: block;
+        margin: 10px auto;
+      }
+      .logo {
+        width: 70px;
+        max-width: 40vw;
+        margin-bottom: 8px;
+      }
+      .donate-btn {
+        width: 90%;
+        max-width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Replace 'charitywater-logo.png' with your actual logo file name -->
+    <img src="https://i.postimg.cc/k5FFm7Br/charitywater-logo-horizontal-White-Text.png" class="logo">
+    <a href="#" class="about-link">About Us</a>
+    <a href="#" class="donate-btn">Take Action: Donate Now</a>
+  </header>
+  <section class="cta">
+    <h1>Help End the Water Crisis For Everyone, Everywhere</h1>
+    <p>We’re on a mission to bring clean and safe water to every person on the planet—and your donation makes it possible. Join the generation creating real, lasting change</p>
+    <a href="#" class="cta-button">DONATE NOW</a>
+  </section>
+</body>
+</html>
